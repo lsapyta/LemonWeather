@@ -19,6 +19,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField("String","BASE_OPENWEATHER_URL","\"https://api.openweathermap.org/data/3.0/\"")
+        buildConfigField("String","BASE_DATASTORE_NAME","\"LEMON_WEATHER_PREFERENCES\"")
     }
 
     buildTypes {
@@ -63,6 +64,13 @@ dependencies {
     def lib_dagger = '2.48.1'
     implementation "com.google.dagger:dagger:$lib_dagger"
     annotationProcessor "com.google.dagger:dagger-compiler:$lib_dagger"
+
+    //DataStore
+    def lib_datastore = '1.0.0'
+    implementation "androidx.datastore:datastore-preferences:$lib_datastore"
+
+    //RxJava2 support
+    implementation "androidx.datastore:datastore-preferences-rxjava2:$lib_datastore"
 
 
 }
