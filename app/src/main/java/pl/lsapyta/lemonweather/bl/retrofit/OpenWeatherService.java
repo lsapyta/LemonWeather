@@ -7,8 +7,6 @@ import retrofit2.http.Path;
 
 public interface OpenWeatherService
 {
-
-
     @GET("onecall?lat={lat}&lon={lon}&appId={api_key}")
     public Call<CurrentDataResponse> getCurrentAndForecastData(
             @Path(value = "lat") long lat,

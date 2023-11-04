@@ -4,6 +4,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
+import java.util.List;
 
 import pl.lsapyta.lemonweather.bl.retrofit.weatherapi.dto.Rain;
 import pl.lsapyta.lemonweather.bl.retrofit.weatherapi.dto.Snow;
@@ -77,7 +78,7 @@ public class Current implements Serializable {
 
     @SerializedName("weather")
     @Expose
-    public Weather weather;
+    public List<Weather> weather;
 
 
     public Current() {}
