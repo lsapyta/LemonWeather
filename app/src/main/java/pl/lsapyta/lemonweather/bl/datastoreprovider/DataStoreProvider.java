@@ -1,4 +1,4 @@
-package pl.lsapyta.lemonweather.bl.dataprovider;
+package pl.lsapyta.lemonweather.bl.datastoreprovider;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

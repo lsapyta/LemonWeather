@@ -6,7 +6,7 @@ import pl.lsapyta.lemonweather.app.di.ApplicationComponent;
 import pl.lsapyta.lemonweather.app.di.DaggerApplicationComponent;
 import pl.lsapyta.lemonweather.app.di.modules.AppModule;
 import pl.lsapyta.lemonweather.app.di.modules.DataStoreModule;
-import pl.lsapyta.lemonweather.app.di.modules.WeatherApiModule;
+import pl.lsapyta.lemonweather.app.di.modules.weatherapi.WeatherApiModule;
 import pl.lsapyta.lemonweatherapp.BuildConfig;
 
 public class LemonApplication extends Application

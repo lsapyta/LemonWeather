@@ -10,8 +10,9 @@ import java.util.Random;
 import javax.inject.Inject;
 
 import pl.lsapyta.lemonweather.app.LemonApplication;
-import pl.lsapyta.lemonweather.bl.dataprovider.DataStoreProvider;
-import pl.lsapyta.lemonweather.bl.dataprovider.DataStoreProvider.DataStoreKeys;
+import pl.lsapyta.lemonweather.bl.datastoreprovider.DataStoreProvider;
+import pl.lsapyta.lemonweather.bl.datastoreprovider.DataStoreProvider.DataStoreKeys;
+import pl.lsapyta.lemonweather.bl.retrofit.weatherapi.OpenWeatherApiInterface;
 import pl.lsapyta.lemonweatherapp.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,13 +20,14 @@ public class MainActivity extends AppCompatActivity {
     @Inject
     DataStoreProvider dataStoreProvider;
 
-
-
+    @Inject
+    OpenWeatherApiInterface weatherApi;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         ((LemonApplication) getApplication()).getAppComponent().inject(this);
+
         setContentView(R.layout.activity_main);
 
         TextView text = findViewById(R.id.test);

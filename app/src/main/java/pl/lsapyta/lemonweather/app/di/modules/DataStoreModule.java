@@ -10,7 +10,7 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import pl.lsapyta.lemonweather.bl.dataprovider.DataStoreProvider;
+import pl.lsapyta.lemonweather.bl.datastoreprovider.DataStoreProvider;
 
 @Module
 public class DataStoreModule

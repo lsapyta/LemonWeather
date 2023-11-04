@@ -65,12 +65,8 @@ dependencies {
     implementation "com.google.dagger:dagger:$lib_dagger"
     annotationProcessor "com.google.dagger:dagger-compiler:$lib_dagger"
 
-    //DataStore
     def lib_datastore = '1.0.0'
     implementation "androidx.datastore:datastore-preferences:$lib_datastore"
 
-    //RxJava2 support
     implementation "androidx.datastore:datastore-preferences-rxjava2:$lib_datastore"
-
-
 }
